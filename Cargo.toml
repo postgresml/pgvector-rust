@@ -13,10 +13,10 @@ byteorder = "1"
 bytes = "1"
 postgres = { version = "0", optional = true }
 diesel = { version = "2", features = ["postgres"], optional = true }
-sqlx = { version = "0", features = ["postgres"], optional = true }
+sqlx = { git = "https://github.com/launchbadge/sqlx", features = ["postgres"], optional = true }
 
 [dev-dependencies]
-sqlx = { version = "0", features = ["runtime-async-std-native-tls"] }
+sqlx = { git = "https://github.com/launchbadge/sqlx", features = ["runtime-async-std-native-tls"] }
 async-std = { version = "1", features = ["attributes"] }
 
 [features]
